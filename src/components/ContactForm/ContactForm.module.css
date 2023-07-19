@@ -1,0 +1,42 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.submit {
+    width: 120px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #9cd26d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #9cd26d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input::placeholder {
+    color: #ccc;
+}
