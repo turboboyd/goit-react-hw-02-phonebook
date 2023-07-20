@@ -21,8 +21,9 @@ export class App extends Component {
   createUser = dataUser => {
     const { name, number } = dataUser;
     const newContact = { id: nanoid(), name, number };
+    const normalizedNewContact = newContact.name.toLowerCase();
     const contactExaminationthis = this.state.contacts.find(
-      contact => contact.name === newContact.name
+      contact => contact.name.toLowerCase() === normalizedNewContact
     );
     if (contactExaminationthis) {
       return alert(`${dataUser.name} is already in contacts`);
